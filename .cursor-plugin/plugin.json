@@ -1,0 +1,10 @@
+{
+  "name": "helm7",
+  "version": "0.1.0",
+  "description": "Deploy and manage applications on Helm7 through MCP.",
+  "author": { "name": "Helm7" },
+  "homepage": "https://www.helm7.com",
+  "repository": "https://github.com/maxbeech/helm7-agent-tools",
+  "license": "Apache-2.0",
+  "keywords": ["hosting", "deployment", "mcp"]
+}

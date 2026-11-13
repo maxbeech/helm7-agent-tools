@@ -1,0 +1,20 @@
+{
+  "name": "@helm7/cli",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "The helm7 command line. Deploy and operate a whole application, with a costed plan before every change.",
+  "type": "module",
+  "bin": { "helm7": "./bin/helm7.mjs" },
+  "exports": { ".": { "types": "./src/index.ts", "import": "./dist/index.js", "default": "./dist/index.js" } },
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
+  "files": ["bin", "dist"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "@helm7/sdk": "*" },
+  "devDependencies": { "@helm7/catalogue": "*" }
+}

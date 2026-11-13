@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.maxbeech/helm7",
+  "title": "Helm7",
+  "description": "Deploy and manage applications, databases and storage on Helm7.",
+  "version": "0.1.0",
+  "websiteUrl": "https://www.helm7.com",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://www.helm7.com/mcp" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@helm7/catalogue",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Single source of truth for Helm7's machine surface: REST routes, MCP tools, OpenAPI, llms.txt and the SDK endpoint table all generate from here.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ]
+}

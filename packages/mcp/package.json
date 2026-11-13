@@ -1,0 +1,22 @@
+{
+  "name": "@helm7/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Helm7's MCP server: one createServer behind both the stdio bin and the hosted HTTP route.",
+  "type": "module",
+  "bin": { "helm7-mcp": "./bin/helm7-mcp.mjs" },
+  "exports": { ".": { "types": "./src/index.ts", "import": "./dist/index.js", "default": "./dist/index.js" } },
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
+  "files": ["bin", "dist"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@helm7/catalogue": "*",
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}

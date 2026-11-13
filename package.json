@@ -1,0 +1,15 @@
+{
+  "name": "helm7-agent-tools",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "npm run build -w @helm7/catalogue && npm run build -w @helm7/sdk && npm run build -w @helm7/cli && npm run build -w @helm7/mcp",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run"
+  },
+  "devDependencies": { "@types/node": "^22.10.2", "typescript": "^5.7.2", "vitest": "^2.1.8" }
+}
